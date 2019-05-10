@@ -1,9 +1,10 @@
-# Openintel
+![Demo pic](https://github.com/MartijnReeuwijk/project-3-1819/blob/master/readmeassets/hero.png)
+
+# Jiskefet
 
 This is a notification system voor CERN, to be used in the Jiskefet App.
 
-# Tabel of content
-- [Openintel](#openintel)
+- [Jiskefet](#Jiskefet)
 - [Tabel of content](#tabel-of-content)
   * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
@@ -11,11 +12,8 @@ This is a notification system voor CERN, to be used in the Jiskefet App.
   * [Running](#running)
   * [Linting](#linting)
   * [Build With](#build-with)
-  * [Data formating](#data-formating)
-    + [Data formating](#data-formating-1)
-    + [Data output example](#data-output-example)
-        * [Standard use object](#standard-use-object)
-  * [Visualization](#visualization)
+- [Concept](#concept)
+  * [Notification ranked alert](#notification-ranked-alert)
   * [Authors](#authors)
   * [License](#license)
   * [Acknowledgments and Thanks](#acknowledgments-and-thanks)
@@ -37,75 +35,86 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
--   `git@github.com:MartijnReeuwijk/OpenIntel.git`
--   `cd OpenIntel`
--   `npm install`
+-   `git@github.com:MartijnReeuwijk/project-3-1819.git`
+-   `cd project-3-1819`
 
 ## Running
-
-For now its just a CLI client app
-Just run the "app" by using this line of code inside the correct folder
-Our port is a default of 5000.
-
--   `Npm start`
+It has no server so it works without any running.
 
 ## Linting
 
 For linting i used CleanCss and Prettier
 To run the Prettier use the code below
 
--   `npm run clean`
 
 ## Build With
 
--   [OpenIntel](https://openintel.nl/) - OpenIntel
--   [D3](https://d3js.org/) - D3
+-   [Bootstrap](https://getbootstrap.com/) (getbootstrap)
 -   [Prettier](https://prettier.io/docs/en/options.html) - Prettier.io - Linter
--   [Observablehq](https://beta.observablehq.com) - Observablehq gebruikt voor visuals
 
-## Data formating
+# Concept
+## Notification ranked alert
+This notification system is made for Cern and its many projects this is focused on the Jiskefet App for the Alice LHC.
+The notifications are designed so that they are easy to understand with the Button and the "Kill timer" so the user sees it going down before it fades away.
+After its is faded away it will go to the notification page where the user can see them again.
 
-### Data formating
 
-The data we got from Openintel was clean and in a good readable format however we did change it a bit to better fit our needs.
-We counted all the TLD and added them together to get a total of a single TLD. We also added the total values form a TLD.
+#Notification
+The notifications.
+![modal](https://github.com/MartijnReeuwijk/project-3-1819/blob/master/readmeassets/notifi.png)
+The notification system is for now a prototype it works with pieces of the bootstrap but not everything, i used bootstrap so it easily implemented.
 
-### Data output example
-##### Standard use object
-This is an example on how the data looks.
 ```
-nl: Array(31)
-0: {date: "2016-04-01T00:00:00.000Z", values: Array(50), country: "nl", all: Array(6), total: 3329761}
-1: {date: "2016-05-01T00:00:00.000Z", values: Array(50), country: "nl", all: Array(6), total: 3337435}
-2: {date: "2016-06-01T00:00:00.000Z", values: Array(50), country: "nl", all: Array(6), total: 3342944}
-3: {date: "2016-07-01T00:00:00.000Z", values: Array(50), country: "nl", all: Array(6), total: 3350057}
-4: {date: "2016-08-01T00:00:00.000Z", values: Array(50), country: "nl", all: Array(7), total: 3353996}
+<section class="notificationHolder">
+  <!-- Dit moet eigelijk met een  -->
+  <section class="notification outOfView">
+    <div class="avatar">
+      <img src="./images/avatar.png" alt="avatar">
+    </div>
+    <div class="lineHolder">
+      <div class="line"></div>
+    </div>
+    <article class="message">
+      <h2>Martin Steinacher</h2>
+      <p>
+        The Sensors are not working
+      </p>
+      <button type="button" class="btn btn-primary messageButton" data-toggle="modal" data-target="#exampleModalLong">
+        Open message
+      </button>
+    </article>
+  </section>
+</section>
 ```
-With in on the inside of the values array
+
+#Modals
+I used the modal that is form Bootstrap so that other teams dont need to change much in the implementation. The modal will have the subject of the message and full description and a link to the corresponding thread/board/form this is done so the end user can easly navigate through the Jiskefet App.
+
+
+It works like the original Bootstrap
+![modal](https://github.com/MartijnReeuwijk/project-3-1819/blob/master/readmeassets/modal.png)
 ```
-1: {name: "metaregistrar.nl.", value: 370038}
-2: {name: "transip.net.", value: 326939}
-3: {name: "firstfind.nl.", value: 266901}
-4: {name: "rzone.de.", value: 152024}
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" arialabelledby="exampleModalLongTitle" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"> Title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        text
+      </div>
+      <div class="modal-footer">
+        <a href="" class="btn btn-primary">Go to thread</a>
+      </div>
+    </div>
+  </div>
+</div>
 ```
 
-## Visualization
-For the visualization we used four different types of charts and designs. Through out our multiple designs we want to create a funnel effect. Global data at the start and in the end very specific data about a country.
-
-Here we went for a bubble chart to show the massive size of .com in comparison to other TLD's.
-In this visualization you can clearly see that .nl and .ru are way larger in size then any other country based TLD.
-![Center](https://github.com/MartijnReeuwijk/OpenIntel/blob/master/assets/images/bubbel.png)
-
-Here we show to where the TLD are hosted/registered.
-We show how foainstace .nl is split
-![Donut](https://github.com/MartijnReeuwijk/OpenIntel/blob/master/assets/images/piechart.png)
-
-In the Sunburst chart we show you what a country makes based on the sales on the national TLD's.
-![Sunburst](https://github.com/MartijnReeuwijk/OpenIntel/blob/master/assets/images/visual-youp.svg)
-
-In this population chart we show how the population is divided by the population.
-Here we show if the population was divided the same way as an countries TLD's
-![Population](https://github.com/MartijnReeuwijk/OpenIntel/blob/master/assets/images/chart_inwoners.svg)
 
 ## Authors
 
