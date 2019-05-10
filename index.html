@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Notifications</title>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/notification.css">
+
+
+
+</head>
+
+<body>
+  <main>
+    <section class="notificationHolder">
+      <!-- Dit moet eigelijk met een  -->
+      <section class="notification inToView">
+        <div class="avatar">
+          <img src="./images/avatar.png" alt="avatar">
+        </div>
+        <div class="lineHolder">
+          <div class="line"></div>
+        </div>
+        <article class="message">
+          <h2>Martin Steinacher</h2>
+          <p>
+            The Sensors are not working
+          </p>
+          <button type="button" class="btn btn-primary messageButton" data-toggle="modal" data-target="#exampleModalLong">
+            Launch demo modal
+          </button>
+        </article>
+      </section>
+    </section>
+
+    <!-- Button trigger modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <!-- Modal -->
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle"> The Sensors are not working</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            The six areas along the circumference of the LHC that will gather data and conduct experiments are simply known as detectors. Some of them will search for the same kind of information, though not in the same way. There are four major
+            detector sites and two smaller ones.
+
+            The ­detector known as A Toroidal LHC ApparatuS (ATLAS) is the largest of the bunch. It measures 46 meters (150.9 feet) long by 25 meters (82 feet) tall and 25 meters wide. At its core is a device called the inner tracker. The inner
+            tracker detects and analyzes the momentum of particles passing through the ATLAS detector. Surrounding the inner tracker is a calorimeter. Calorimeters measure the energy of particles by absorbing them. Scientists can look at the path
+            the particles took and extrapolate information about them.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Go to thread</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" id="button" name="button"> Show </button>
+    <button type="button" id="buttonErr" name="button"> Error </button>
+    <button type="button" id="buttonMes" name="button"> Note </button>
+
+  </main>
+  <!-- <script src="./js/master.js" charset="utf-8"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

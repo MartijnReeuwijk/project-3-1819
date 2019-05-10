@@ -1,34 +1,118 @@
-# Project 3 @cmda-minor-web · 2018-2019
+# Openintel
 
-## Design for Real-Time
-Het project vindt plaats bij in ons eigen lokaal. Maandagochtend is om 9.30 uur de kickoff (bij de oprachtgever), vrijdag zijn de presentaties van de resultaten (bij de opdrachtgever). In een week bouwt iedere student een eigen prototype ter onderbouwing van aanbevelingen aan de opdrachtgevers (CERN & Lifely). De aanbevelingen betreffen het designen voor Real-Time web applicaties. Technieken geleerd bij [Web Design](https://github.com/cmda-minor-web/web-design-1819) en [Real-Time Web](https://github.com/cmda-minor-web/real-time-web-1819) worden toegepast bij het bouwen van de de prototypes en et schrijven van de aanbevelingen.
+This is a notification system voor CERN, to be used in the Jiskefet App.
 
-## Programma
-Maandag - 9.30 - kickoff
-Woensdag - voortgangbespreking
-Vrijdag presentatie
+# Tabel of content
+- [Openintel](#openintel)
+- [Tabel of content](#tabel-of-content)
+  * [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+  * [Running](#running)
+  * [Linting](#linting)
+  * [Build With](#build-with)
+  * [Data formating](#data-formating)
+    + [Data formating](#data-formating-1)
+    + [Data output example](#data-output-example)
+        * [Standard use object](#standard-use-object)
+  * [Visualization](#visualization)
+  * [Authors](#authors)
+  * [License](#license)
+  * [Acknowledgments and Thanks](#acknowledgments-and-thanks)
 
-## Werkwijze en Criteria
-### Werkwijze
-Full-time week werken aan prototypes / proof of concepts over designen voor real-time web applicaties. Vrijdag is de pitch! Student laat zien dat hij/zij de vakken [Web Design](https://github.com/cmda-minor-web/web-design-1819) en [Real-Time Web](https://github.com/cmda-minor-web/real-time-web-1819) begrijpt en beheerst.
+## Getting Started
 
-Iedere dag zijn er coaches aanwezig voor coaching en feedback. We sluiten de dag af met een stand up, om de status door te spreken. Waar ben je mee bezig? Loop je ergens vast of heb je hulp nodig? Waar sta je?
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Beoordeling
-Tijdens de beoordeling krijg je feedback op het resultaat en op je functioneren. De vakdocenten beoordelen In hoeverre je in het project laten zien dat je de bijhorende vakken beheerst en goed hebt toegepast. De opdrachtgver is geïnteresseerd in hoeverre je oplossing voldoet aan de eisen die zijzelf stellen aan hun producten. Misschien laat je wel wat zien waar ze zelf nog niet aan gedacht hebben?
+## Prerequisites
 
-Het project telt als AVV mee met de Meesterproef.
+You will need the following things properly installed on your computer.
 
-### Feedback over functioneren
-Je hebt een leergierig, gedreven en zelfredzame houding nodig om de minor te kunnen halen. Welke vaardigheden heb je laten zien? Onderzoekend vermogen? Creativiteit? Conceptueel? In hoeverre komen je houding en verworven vaardigheden overeen met wat een frontender in de praktijk nodig heeft?
+-   [Git](https://git-scm.com/)
+-   [Node.js](https://nodejs.org/) (with npm)
+-   [Bootstrap](https://getbootstrap.com/) (getbootstrap)
+-   [Google Chrome](https://google.com/chrome/)
+-   It works without the Jiskefet project but it is build with it in mind.
 
-### Web Design
-Het vak [Web Design](https://github.com/cmda-minor-web/web-design-1819) gaat over het ontwerpen en testen van Interactie. Het voordeel van een Frontend Developer (of Web Designer) is dat die techniek begrijpt, kan toepassen én verstand heeft van UX en design. Als je Web technieken begrijpt kun je je ideeën snel prototypen en testen met echte gebruikers, in een browser. Je kan dan aanpassingen doorvoeren, uitproberen en weer testen
 
-### Real-Time Web
-Het vak [Real-Time Web](https://github.com/cmda-minor-web/real-time-web-1819) gaat over het bouwen van een betekenisvolle real-time applicatie. Hierin leer je hoe je een open verbinding (web socket) opzet tussen de client en de server. En hoe je in real-time data biede kanten op kunt versturen.
+## Installation
 
-### Oplevering & criteria
-- Presentatie met je bevindingen bij de opdrachtgever. 
-- Github met je code en readme.
+-   `git@github.com:MartijnReeuwijk/OpenIntel.git`
+-   `cd OpenIntel`
+-   `npm install`
 
+## Running
+
+For now its just a CLI client app
+Just run the "app" by using this line of code inside the correct folder
+Our port is a default of 5000.
+
+-   `Npm start`
+
+## Linting
+
+For linting i used CleanCss and Prettier
+To run the Prettier use the code below
+
+-   `npm run clean`
+
+## Build With
+
+-   [OpenIntel](https://openintel.nl/) - OpenIntel
+-   [D3](https://d3js.org/) - D3
+-   [Prettier](https://prettier.io/docs/en/options.html) - Prettier.io - Linter
+-   [Observablehq](https://beta.observablehq.com) - Observablehq gebruikt voor visuals
+
+## Data formating
+
+### Data formating
+
+The data we got from Openintel was clean and in a good readable format however we did change it a bit to better fit our needs.
+We counted all the TLD and added them together to get a total of a single TLD. We also added the total values form a TLD.
+
+### Data output example
+##### Standard use object
+This is an example on how the data looks.
+```
+nl: Array(31)
+0: {date: "2016-04-01T00:00:00.000Z", values: Array(50), country: "nl", all: Array(6), total: 3329761}
+1: {date: "2016-05-01T00:00:00.000Z", values: Array(50), country: "nl", all: Array(6), total: 3337435}
+2: {date: "2016-06-01T00:00:00.000Z", values: Array(50), country: "nl", all: Array(6), total: 3342944}
+3: {date: "2016-07-01T00:00:00.000Z", values: Array(50), country: "nl", all: Array(6), total: 3350057}
+4: {date: "2016-08-01T00:00:00.000Z", values: Array(50), country: "nl", all: Array(7), total: 3353996}
+```
+With in on the inside of the values array
+```
+1: {name: "metaregistrar.nl.", value: 370038}
+2: {name: "transip.net.", value: 326939}
+3: {name: "firstfind.nl.", value: 266901}
+4: {name: "rzone.de.", value: 152024}
+```
+
+## Visualization
+For the visualization we used four different types of charts and designs. Through out our multiple designs we want to create a funnel effect. Global data at the start and in the end very specific data about a country.
+
+Here we went for a bubble chart to show the massive size of .com in comparison to other TLD's.
+In this visualization you can clearly see that .nl and .ru are way larger in size then any other country based TLD.
+![Center](https://github.com/MartijnReeuwijk/OpenIntel/blob/master/assets/images/bubbel.png)
+
+Here we show to where the TLD are hosted/registered.
+We show how foainstace .nl is split
+![Donut](https://github.com/MartijnReeuwijk/OpenIntel/blob/master/assets/images/piechart.png)
+
+In the Sunburst chart we show you what a country makes based on the sales on the national TLD's.
+![Sunburst](https://github.com/MartijnReeuwijk/OpenIntel/blob/master/assets/images/visual-youp.svg)
+
+In this population chart we show how the population is divided by the population.
+Here we show if the population was divided the same way as an countries TLD's
+![Population](https://github.com/MartijnReeuwijk/OpenIntel/blob/master/assets/images/chart_inwoners.svg)
+
+## Authors
+
+-   **Martijn Reeuwijk** - [MartijnReeuwijk](https://github.com/MartijnReeuwijk)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments and Thanks

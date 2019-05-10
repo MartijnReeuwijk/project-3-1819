@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://cmd.jiskefet.io/logs/144 -->
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Jiskefet</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/spinner.css">
+
+  <link rel="stylesheet" href="./css/svg.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+
+<body>
+  <script defer="" src="./Jiskefet_files/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+  <noscript>
+    <h1 style="font-family: sans-serif; text-align: center">JavaScript must be enabled to run Jiskefet</h1>
+  </noscript>
+
+  <div>
+
+    <nav class="navbar navbar-expand-sm navbar-dark jf-navbar">
+      <div class="navbar-header w-100 d-flex"><button type="button" class="btn jf-hamburger-button"><svg class="svg-inline--fa fa-bars fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512" data-fa-i2svg="">
+            <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+          </svg><!-- <span class="fas fa-bars"></span> --></button><a href="http://cmd.jiskefet.io/" class="navbar-brand"><img src="./Jiskefet_files/alice_logo_text_white.png" width="30" height="30" alt="" class="d-inline-block align-top jf-logo">Jiskefet</a>
+        <ul class="jf-align-right mr-2">
+          <div>
+            <div class="jf-profile-nav-item">
+              <div class="btn-group">
+                <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle mt-2"><img src="https://home.cern/sites/home.web.cern.ch/files/inline-images/cagrigor/Sep%2010%202017_0_6.jpg" alt="@Martijn" height="25"
+                    width="25" class="rounded"><span><svg class="svg-inline--fa fa-caret-down fa-w-10 jf-caret-down ml-2" aria-hidden="true" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                      data-fa-i2svg="">
+                      <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
+                    </svg><!-- <i class="fas fa-caret-down jf-caret-down ml-2"></i> --></span></div>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <div href="/user/60" class="dropdown-item jf-dropdown-name">Signed in as <br> <b>MartijnReeuwijk</b></div>
+                  <div class="dropdown-divider"></div><button href="/user/60" type="button" class="dropdown-item jf-dropdown-item">Your profile</button>
+                  <div class="dropdown-divider"></div><button href="/tokens" type="button" class="dropdown-item jf-dropdown-item">Tokens</button>
+                  <div class="dropdown-divider"></div><a href="http://cmd.jiskefet.io/api/doc/" target="_blank"><button type="button" class="dropdown-item jf-dropdown-item">API docs</button></a>
+                  <div class="dropdown-divider"></div><button type="button" class="dropdown-item jf-dropdown-item">Sign out</button>
+                </div>
+                <button type="button" id="button" name="button"> Show </button>
+                <button type="button" id="buttonErr" name="button"> Error </button>
+                <button type="button" id="buttonMes" name="button"> Note </button>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <div class="jf-wrapper">
+      <nav class="jf-sidebar ">
+        <ul class="list-unstyled components">
+          <li class="nav-item false"><a href="file:///Users/martijn/Documents/Sites/project-3-1819/pages/notification.html" class="nav-link">Logs</a></li>
+          <li class="nav-item false"><a href="file:///Users/martijn/Documents/Sites/project-3-1819/pages/notification.html" class="nav-link">Runs</a></li>
+          <li class="nav-item false"><a href="file:///Users/martijn/Documents/Sites/project-3-1819/pages/notification.html" class="nav-link">Create new log</a></li>
+          <li class="nav-item false"><a href="file:///Users/martijn/Documents/Sites/project-3-1819/pages/notification.html" class="nav-link">Subsystems Overview</a></li>
+          <li class="nav-item false relative-bubble">
+            <div class="bubble"></div>
+            <a href="file:///Users/martijn/Documents/Sites/project-3-1819/pages/notification.html" class="nav-link">Notification</a>
+          </li>
+        </ul>
+        <div class="jf-footer">Jiskefet v0.1.0</div>
+      </nav>
+      <div class="jf-content ">
+        <div class="container-fluid">
+          <div class="container-fluid">
+            <div>
+              <div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="text-center"></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+
+                <div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="text-center"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 mx-auto">
+                    <div class="card shadow-sm bg-light">
+                      <div class="card-header">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h3>Log</h3>
+                          </div>
+                          <div class="col-md-6">
+                            <div>
+                              <div><button type="button" data-toggle="modal" data-target="#add-existing-run" class="btn btn-primary float-right">Link to run</button>
+                                <div tabindex="-1" role="dialog" id="add-existing-run" class="modal mt-5">
+                                  <div role="document" class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title">Link to run</h5><button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div>
+                                          <div>
+                                            <div>
+                                              <div class="row">
+                                                <div class="col-md-12">
+                                                  <div id="filters" aria-expanded="true" data-fa-transform="grow-10" class="jf-collapse-toggle"><svg class="svg-inline--fa fa-filter fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="filter"
+                                                      role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                                      <path fill="currentColor" d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"></path>
+                                                    </svg><!-- <span class="fas fa-filter"></span> -->&nbsp;Filters</div>
+                                                  <div id="filters" class="">
+                                                    <div>
+                                                      <div class="row">
+                                                        <div class="col-md-12">
+                                                          <div id="runNumber" aria-expanded="true" data-fa-transform="grow-10" class="jf-collapse-toggle"><svg class="svg-inline--fa fa-angle-down fa-w-10 mt-2 jf-rotate-if-collapsed jf-rotate-if-not-collapsed"
+                                                              aria-hidden="true" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                                                              <path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+                                                            </svg><!-- <i class="fas fa-angle-down mt-2 jf-rotate-if-collapsed jf-rotate-if-not-collapsed"></i> -->&nbsp;Run number</div>
+                                                          <div id="runNumber" class="">
+                                                            <div class="form-group mt-2"><input type="number" id="runNumber" placeholder="e.g. 12" class="form-control form-control-sm"></div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="table-responsive">
+                                            <table class="table table-sm table-bordered table-hover jf-table font-sm">
+                                              <thead class="thead-light">
+                                                <tr>
+                                                  <th scope="col" class="jf-th null">Action</th>
+                                                  <th scope="col" class="jf-th null">Run id</th>
+                                                  <th scope="col" class="jf-th null">Time O² start</th>
+                                                  <th scope="col" class="jf-th null">Time O² end</th>
+                                                  <th scope="col" class="jf-th null">Time trg start</th>
+                                                  <th scope="col" class="jf-th null">Time trg end</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>1</td>
+                                                  <td>21:25:42 30/11/2018</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>09:47:59 21/10/2018</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>2</td>
+                                                  <td>09:37:38 23/08/2018</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>18:35:42 27/04/2019</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>3</td>
+                                                  <td>19:16:56 25/08/2018</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>15:19:34 14/02/2019</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>4</td>
+                                                  <td>10:22:18 24/12/2018</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>21:28:52 09/05/2019</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>5</td>
+                                                  <td>11:33:39 06/05/2019</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>19:49:06 24/05/2018</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>6</td>
+                                                  <td>23:56:33 03/04/2019</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>11:09:35 31/08/2018</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>7</td>
+                                                  <td>13:47:48 16/05/2018</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>06:04:37 04/07/2018</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>8</td>
+                                                  <td>05:17:21 27/05/2019</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>07:37:38 10/02/2019</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>9</td>
+                                                  <td>10:45:24 27/02/2019</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>16:19:56 19/02/2019</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>10</td>
+                                                  <td>00:42:54 11/01/2019</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>22:43:03 11/03/2019</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>11</td>
+                                                  <td>08:58:52 15/06/2018</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>05:40:34 03/03/2019</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>12</td>
+                                                  <td>06:24:00 04/10/2018</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>14:40:13 02/09/2018</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>13</td>
+                                                  <td>03:05:00 29/12/2018</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>17:53:49 26/05/2018</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>14</td>
+                                                  <td>20:18:58 24/11/2018</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>05:33:44 05/10/2018</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>15</td>
+                                                  <td>22:47:56 13/12/2018</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>17:39:24 30/01/2019</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>16</td>
+                                                  <td>13:50:37 27/04/2019</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>06:50:55 13/09/2018</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>17</td>
+                                                  <td>00:19:09 20/05/2019</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>09:57:55 24/07/2018</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>18</td>
+                                                  <td>02:28:00 18/04/2019</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>21:48:58 07/06/2018</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>19</td>
+                                                  <td>07:39:28 02/12/2018</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>11:19:14 30/05/2018</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>20</td>
+                                                  <td>09:47:37 06/05/2019</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>03:05:07 02/12/2018</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>21</td>
+                                                  <td>10:04:45 06/05/2019</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>21:27:27 12/05/2018</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>22</td>
+                                                  <td>12:08:18 29/08/2018</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>21:36:19 13/01/2019</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>23</td>
+                                                  <td>06:03:07 16/02/2019</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>13:31:02 26/12/2018</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>24</td>
+                                                  <td>00:19:47 14/04/2019</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>20:36:30 29/08/2018</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><button type="button" data-dismiss="modal" class="btn btn-primary btn-sm btn-block">Link Run</button></td>
+                                                  <td>25</td>
+                                                  <td>20:04:01 19/07/2018</td>
+                                                  <td>Run In Progress</td>
+                                                  <td>04:25:40 30/04/2019</td>
+                                                  <td>Run In Progress</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div><button class="btn btn-primary undefined undefined">Comment on this Log</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <h5 class="card-title">faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat</h5>
+                            </div>
+                            <div class="col-md-6">
+                              <dl class="row" style="margin-block-end: 0px;"><dt class="col-sm-6">Log id</dt>
+                                <dd class="col-sm-6">144</dd>
+                              </dl>
+                              <dl class="row" style="margin-block-end: 0px;"><dt class="col-sm-6">Subtype</dt>
+                                <dd class="col-sm-6"><span class="badge badge-primary">comment</span></dd>
+                              </dl>
+                              <dl class="row" style="margin-block-end: 0px;"><dt class="col-sm-6">Origin</dt>
+                                <dd class="col-sm-6"><span class="badge badge-success">human</span></dd>
+                              </dl>
+                              <dl class="row" style="margin-block-end: 0px;"><dt class="col-sm-6">Creation time</dt>
+                                <dd class="col-sm-6">22:24:20 30/07/2019</dd>
+                              </dl>
+                              <dl class="row" style="margin-block-end: 0px;"><dt class="col-sm-6">Author</dt>
+                                <dd class="col-sm-6">12</dd>
+                              </dl>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header">
+                          <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link active">Content</a></li>
+                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link false">Runs</a></li>
+                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link false">Files</a></li>
+                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link false">Tags</a></li>
+                            <li class="nav-item"><a href="javascript:void(0);" class="nav-link false">Comments</a></li>
+                          </ul>
+                        </div>
+                        <div class="card-body">
+                          <div class="tab-content false">
+                            <div class="jf-markdown-wrapper">
+                              <div id="CreateLogMarkdown" class="jf-markdown-viewer">
+                                <p>Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus
+                                  et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+                                  Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-content d-none">
+                            <div class="table-responsive">
+                              <table class="table table-sm table-bordered table-hover jf-table font-sm">
+                                <thead class="thead-light">
+
+                                  <tr>
+                                    <th scope="col" class="jf-th null">Run number</th>
+                                    <th scope="col" class="jf-th null">Time O² start</th>
+                                    <th scope="col" class="jf-th null">Time O² end</th>
+                                    <th scope="col" class="jf-th null">Time trg start</th>
+                                    <th scope="col" class="jf-th null">Time trg end</th>
+                                    <th scope="col" class="jf-th null">Activity id</th>
+                                    <th scope="col" class="jf-th null">Run type</th>
+                                    <th scope="col" class="jf-th null">Run quality</th>
+                                    <th scope="col" class="jf-th null">Detectors</th>
+                                    <th scope="col" class="jf-th null">FLPs</th>
+                                    <th scope="col" class="jf-th null">EPNs</th>
+                                    <th scope="col" class="jf-th null">Timeframes</th>
+                                    <th scope="col" class="jf-th null">Sub-timeframes</th>
+                                    <th scope="col" class="jf-th null">B read out</th>
+                                    <th scope="col" class="jf-th null">B timeframe builder</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><a href="http://cmd.jiskefet.io/runs/1">1</a></td>
+                                    <td>21:25:42 30/11/2018</td>
+                                    <td>Run In Progress</td>
+                                    <td>09:47:59 21/10/2018</td>
+                                    <td>Run In Progress</td>
+                                    <td>XZTDsgV4SiVPHFfZ</td>
+                                    <td>PHYSICS</td>
+                                    <td></td>
+                                    <td>9</td>
+                                    <td>41</td>
+                                    <td>88</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="http://cmd.jiskefet.io/runs/2">2</a></td>
+                                    <td>09:37:38 23/08/2018</td>
+                                    <td>Run In Progress</td>
+                                    <td>18:35:42 27/04/2019</td>
+                                    <td>Run In Progress</td>
+                                    <td>LEMgOOanXimvLYxL</td>
+                                    <td>TECHNICAL</td>
+                                    <td></td>
+                                    <td>32</td>
+                                    <td>14</td>
+                                    <td>23</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="http://cmd.jiskefet.io/runs/3">3</a></td>
+                                    <td>19:16:56 25/08/2018</td>
+                                    <td>Run In Progress</td>
+                                    <td>15:19:34 14/02/2019</td>
+                                    <td>Run In Progress</td>
+                                    <td>UVJt3o80fMcQd2pp</td>
+                                    <td>TECHNICAL</td>
+                                    <td></td>
+                                    <td>72</td>
+                                    <td>5</td>
+                                    <td>76</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="http://cmd.jiskefet.io/runs/35">35</a></td>
+                                    <td>01:42:24 08/12/2018</td>
+                                    <td>Run In Progress</td>
+                                    <td>13:21:55 04/10/2018</td>
+                                    <td>Run In Progress</td>
+                                    <td>VOvEojaV6UsThLNd</td>
+                                    <td>COSMICS</td>
+                                    <td></td>
+                                    <td>83</td>
+                                    <td>15</td>
+                                    <td>42</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="http://cmd.jiskefet.io/runs/135">135</a></td>
+                                    <td>23:12:04 09/09/2018</td>
+                                    <td>Run In Progress</td>
+                                    <td>16:19:23 04/04/2019</td>
+                                    <td>Run In Progress</td>
+                                    <td>VBZSU6o5Jlg0PeGf</td>
+                                    <td>COSMICS</td>
+                                    <td></td>
+                                    <td>73</td>
+                                    <td>84</td>
+                                    <td>14</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="http://cmd.jiskefet.io/runs/141">141</a></td>
+                                    <td>16:40:53 23/08/2018</td>
+                                    <td>Run In Progress</td>
+                                    <td>02:36:27 11/06/2018</td>
+                                    <td>Run In Progress</td>
+                                    <td>ZBaMGzRFakANHVU7</td>
+                                    <td>TECHNICAL</td>
+                                    <td></td>
+                                    <td>16</td>
+                                    <td>86</td>
+                                    <td>24</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="http://cmd.jiskefet.io/runs/221">221</a></td>
+                                    <td>07:44:55 06/05/2018</td>
+                                    <td>Run In Progress</td>
+                                    <td>04:47:17 02/05/2019</td>
+                                    <td>Run In Progress</td>
+                                    <td>YXywN4s4QS9RPyTP</td>
+                                    <td>COSMICS</td>
+                                    <td></td>
+                                    <td>33</td>
+                                    <td>65</td>
+                                    <td>28</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="http://cmd.jiskefet.io/runs/244">244</a></td>
+                                    <td>08:27:17 24/05/2019</td>
+                                    <td>Run In Progress</td>
+                                    <td>04:26:26 26/08/2018</td>
+                                    <td>Run In Progress</td>
+                                    <td>JRKSW1l1n2dcsZYj</td>
+                                    <td>COSMICS</td>
+                                    <td></td>
+                                    <td>74</td>
+                                    <td>49</td>
+                                    <td>92</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-content d-none">
+                            <div>
+                              <ul>
+                                <li><a id="1" download="Screenshot from 2019-05-05 22-19-54.png" href="blob:http://cmd.jiskefet.io/2370595d-f5c4-4899-9f9b-e1408c9785fb">Screenshot from 2019-05-05 22-19-54.png</a></li>
+                              </ul>
+                              <hr>
+                              <div><button type="button" data-toggle="modal" data-target="#attachment-modal-id" class="btn btn-primary btn-lg float-right">Add attachment</button>
+                                <div tabindex="-1" role="dialog" id="attachment-modal-id" class="modal mt-5">
+                                  <div role="document" class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title">Add attachment</h5><button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div>
+                                          <form id="addAttachment">
+                                            <div>
+                                              <div role="alert" id="maximum-size-label" for="save" hidden="" class="alert alert-danger">Maximum file size is 5MB! Please select a smaller file.</div><label for="fileUpload">Attach file to Log:</label><input
+                                                id="fileUpload" name="fileUpload" type="file" data-show-caption="true" class="form-control-file undefined"><img id="preview-image" src="http://cmd.jiskefet.io/logs/144" style="max-width: 40%; padding: 10px 10px 10px 0px;">
+                                              <div><span tabindex="0" data-toggle="tooltip" data-placement="right" title="Select a file before saving." class="d-inline-block"><button id="save" data-dismiss="modal" disabled="" class="btn btn-primary">Save
+                                                    File</button></span></div>
+                                            </div>
+                                          </form>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-content d-none">
+                            <div>
+                              <h3>Currently added tags:</h3>
+                              <ul></ul>
+                              <hr>
+                              <h3>Add a Tag to this log:</h3>
+                              <form>
+                                <div class="form-group undefined"><label for="tag">Select an existing tag:</label>
+                                  <div class="field">
+                                    <div>
+                                      <div><select id="tag" name="tag" required="" class="selectpicker form-control undefined">
+                                          <option value="">No options found</option>
+                                        </select></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group undefined"><label autofocus="autofocus" for="description">Add new tag:</label>
+                                  <div class="field"><input id="tagText" type="text" autofocus="" class="form-control undefined"></div>
+                                </div>
+                                <div class="form-group undefined">
+                                  <div class="field"><button type="submit" class="btn btn-primary undefined undefined">Add Tag</button></div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="tab-content d-none">
+                            <div></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="notificationHolder">
+    <!-- Dit moet eigelijk met een  -->
+    <section class="notification outOfView">
+      <div class="avatar">
+        <img src="./images/avatar.png" alt="avatar">
+      </div>
+      <div class="lineHolder">
+        <div class="line"></div>
+      </div>
+      <article class="message">
+        <h2>Martin Steinacher</h2>
+        <p>
+          The Sensors are not working
+        </p>
+        <button type="button" class="btn btn-primary messageButton" data-toggle="modal" data-target="#exampleModalLong">
+          Open message
+        </button>
+      </article>
+    </section>
+  </section>
+
+
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <!-- Modal -->
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle"> The Sensors are not working</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          The six areas along the circumference of the LHC that will gather data and conduct experiments are simply known as detectors. Some of them will search for the same kind of information, though not in the same way. There are four major
+          detector sites and two smaller ones.
+
+          The ­detector known as A Toroidal LHC ApparatuS (ATLAS) is the largest of the bunch. It measures 46 meters (150.9 feet) long by 25 meters (82 feet) tall and 25 meters wide. At its core is a device called the inner tracker. The inner
+          tracker detects and analyzes the momentum of particles passing through the ATLAS detector. Surrounding the inner tracker is a calorimeter. Calorimeters measure the energy of particles by absorbing them. Scientists can look at the path
+          the particles took and extrapolate information about them.
+        </div>
+        <div class="modal-footer">
+          <a href="" class="btn btn-primary">Go to thread</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="./js/master.js" charset="utf-8"></script>
+
+</body>
+
+</html>
