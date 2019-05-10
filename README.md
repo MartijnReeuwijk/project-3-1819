@@ -58,7 +58,7 @@ This notification system is made for Cern and its many projects this is focused 
 The notifications are designed so that they are easy to understand with the Button and the "Kill timer" so the user sees it going down before it fades away.
 After its is faded away it will go to the notification page where the user can see them again.
 
-#Notification
+## Notification
 The notifications.
 ![modal](https://github.com/MartijnReeuwijk/project-3-1819/blob/master/readmeAssets/notifi.png)
 The notification system is for now a prototype it works with pieces of the bootstrap but not everything, i used bootstrap so it easily implemented.
