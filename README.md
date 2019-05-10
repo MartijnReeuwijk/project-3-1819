@@ -1,4 +1,4 @@
-![Demo pic](https://github.com/MartijnReeuwijk/project-3-1819/blob/master/readmeassets/hero.png)
+![Demo pic](https://github.com/MartijnReeuwijk/project-3-1819/blob/master/readmeAssets/hero.png)
 
 # Jiskefet
 
@@ -58,10 +58,9 @@ This notification system is made for Cern and its many projects this is focused 
 The notifications are designed so that they are easy to understand with the Button and the "Kill timer" so the user sees it going down before it fades away.
 After its is faded away it will go to the notification page where the user can see them again.
 
-
 #Notification
 The notifications.
-![modal](https://github.com/MartijnReeuwijk/project-3-1819/blob/master/readmeassets/notifi.png)
+![modal](https://github.com/MartijnReeuwijk/project-3-1819/blob/master/readmeAssets/notifi.png)
 The notification system is for now a prototype it works with pieces of the bootstrap but not everything, i used bootstrap so it easily implemented.
 
 ```
@@ -92,7 +91,7 @@ I used the modal that is form Bootstrap so that other teams dont need to change 
 
 
 It works like the original Bootstrap
-![modal](https://github.com/MartijnReeuwijk/project-3-1819/blob/master/readmeassets/modal.png)
+![modal](https://github.com/MartijnReeuwijk/project-3-1819/blob/master/readmeAssets/modal.png)
 ```
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" arialabelledby="exampleModalLongTitle" aria-hidden="true">
   <!-- Modal -->
