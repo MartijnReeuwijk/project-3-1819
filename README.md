@@ -4,19 +4,20 @@
 
 This is a notification system voor CERN, to be used in the Jiskefet App.
 
-- [Jiskefet](#Jiskefet)
-- [Tabel of content](#tabel-of-content)
-  * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-  * [Running](#running)
-  * [Linting](#linting)
-  * [Build With](#build-with)
+- [Jiskefet](#jiskefet)
+	- [Getting Started](#getting-started)
+	- [Prerequisites](#prerequisites)
+	- [Installation](#installation)
+	- [Running](#running)
+	- [Linting](#linting)
+	- [Build With](#build-with)
 - [Concept](#concept)
-  * [Notification ranked alert](#notification-ranked-alert)
-  * [Authors](#authors)
-  * [License](#license)
-  * [Acknowledgments and Thanks](#acknowledgments-and-thanks)
+	- [Notification ranked alert](#notification-ranked-alert)
+	- [Notification](#notification)
+- [Modals](#modals)
+	- [Authors](#authors)
+	- [License](#license)
+	- [Acknowledgments and Thanks](#acknowledgments-and-thanks)
 
 ## Getting Started
 
@@ -88,7 +89,7 @@ The notification system is for now a prototype it works with pieces of the boots
 </section>
 ```
 
-#Modals
+# Modals
 I used the modal that is form Bootstrap so that other teams dont need to change much in the implementation. The modal will have the subject of the message and full description and a link to the corresponding thread/board/form this is done so the end user can easly navigate through the Jiskefet App.
 
 
@@ -115,7 +116,13 @@ It works like the original Bootstrap
   </div>
 </div>
 ```
-
+### Todo:
+- [ ] Add server
+- [x] Random timer
+- [] Add real data
+- [] Make everything bootstrap
+- [x] Use bootstrap
+- [] Working links
 
 ## Authors
 
