@@ -61,6 +61,7 @@ After its is faded away it will go to the notification page where the user can s
 ## Notification
 The notifications.
 ![modal](https://github.com/MartijnReeuwijk/project-3-1819/blob/master/readmeAssets/notifi.png)
+
 The notification system is for now a prototype it works with pieces of the bootstrap but not everything, i used bootstrap so it easily implemented.
 
 ```
